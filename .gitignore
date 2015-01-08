@@ -12,3 +12,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore dotenv setting(for development/test)
+.env
