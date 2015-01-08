@@ -17,3 +17,7 @@ deploy:
   app: fish-sause
   on:
     repo: tachikomaio/fish-sause
+  run:
+    - 'rake db:migrate'
+    - restart
+    - 'rake cleanup'
