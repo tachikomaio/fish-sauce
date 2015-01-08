@@ -6,7 +6,7 @@ AllCops:
     - 'db/**/*'
     - 'lib/tmp/**/*'
     - 'bin/**/*'
-
+    - 'vendor/**/*'
 Documentation:
   Enabled: false
 
