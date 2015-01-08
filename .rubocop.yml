@@ -5,7 +5,7 @@ AllCops:
   Exclude:
     - 'db/**/*'
     - 'lib/tmp/**/*'
-    - 'bin/*'
+    - 'bin/**/*'
 
 Documentation:
   Enabled: false
