@@ -10,3 +10,10 @@ notifications:
 branches:
   only:
   - master
+deploy:
+  provider: heroku
+  api_key:
+    secure: dMTd63WSiGfuHaSw2gGt/kgnAdiHoEv+jVEzeQ7djC3SFl4SumlHE1KwtLMR7bYz6+azxH6RtyVADgX98LTTLoVDPOSQCckl0uX/xfzx7zZo+p4eNQftz06HJUj3Xl0B2OPQRxHQjFF5FpFGa2HQV4UWcGMFGsk0l186qzBaXkA=
+  app: fish-sause
+  on:
+    repo: tachikomaio/fish-sause
