@@ -7,6 +7,7 @@ gem 'rails'
 gem 'jbuilder', '~> 2.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem 'rack-health'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

@@ -82,4 +82,4 @@ production:
   <<: *default
   database: fish-sauce_production
   username: fish-sauce
-  password: <%= ENV['FISH-SAUSE_DATABASE_PASSWORD'] %>
+  password: <%= ENV['FISH-SAUCE_DATABASE_PASSWORD'] %>
