@@ -11,19 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150109202536) do
+ActiveRecord::Schema.define(version: 20150110101502) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "spheres", force: :cascade do |t|
-    t.string   "name",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "stats", force: :cascade do |t|
-    t.integer  "sphere_id"
     t.string   "key",        limit: 10, null: false
     t.integer  "count",                 null: false
     t.date     "count_on",              null: false
@@ -31,8 +24,6 @@ ActiveRecord::Schema.define(version: 20150109202536) do
     t.datetime "updated_at",            null: false
   end
 
-  add_index "stats", ["sphere_id", "key", "count_on"], name: "index_stats_sphere_id_key_count_on", using: :btree
-  add_index "stats", ["sphere_id"], name: "index_stats_on_sphere_id", using: :btree
+  add_index "stats", ["key", "count_on"], name: "index_key_count_on", using: :btree
 
-  add_foreign_key "stats", "spheres"
 end
